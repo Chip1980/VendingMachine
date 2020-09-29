@@ -20,4 +20,8 @@ public class DrinkResult {
     public void setDrink(DrinkChoice drink) {
         this.drink = drink;
     }
+
+    public int getRestSum() {
+        return 50;
+    }
 }
