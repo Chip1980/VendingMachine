@@ -1,4 +1,4 @@
-public enum Coins {
+public enum Coins  {
 
 
     C10(10),
