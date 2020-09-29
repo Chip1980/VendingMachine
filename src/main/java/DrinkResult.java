@@ -1,15 +1,15 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class DrinkResult {
 
     private DrinkChoice drink;
-    private ArrayList<Coins> rest;
+    private List<Coins> rest;
 
-    public ArrayList<Coins> getRest() {
+    public List<Coins> getRest() {
         return rest;
     }
 
-    public void setRest(ArrayList<Coins> rest) {
+    public void setRest(List<Coins> rest) {
         this.rest = rest;
     }
 
@@ -22,6 +22,6 @@ public class DrinkResult {
     }
 
     public int getRestSum() {
-        return 50;
+        return rest.stream().map(coins -> coins.value).reduce(0, Integer::sum);
     }
 }

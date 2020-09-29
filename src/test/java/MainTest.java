@@ -23,11 +23,11 @@ public class MainTest {
 
         VendingMachine vm = new VendingMachine();
 
-        DrinkResult result = vm.buy(DrinkChoice.Fanta, Coins.C100, Coins.C100);
+        DrinkResult result = vm.buy(DrinkChoice.Fanta, Coins.C100, Coins.C200);
 
         assertNotNull(result);
         Assert.assertEquals(DrinkChoice.Fanta, result.getDrink());
-        Assert.assertEquals(50, result.getRestSum());
+        Assert.assertEquals(150, result.getRestSum());
     }
 
 }
